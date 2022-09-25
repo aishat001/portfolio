@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+.home {
+
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 70px);
+    top: 70px;
+    position: relative;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    > * {
+      // height: calc(100vh - 70px);
+      scroll-snap-align: start;
+  
+    }
+  }
+  
+  .social-medials {
+    // top: 70%;
+    left: 20px;
+    bottom: 10%;
+    position: fixed;
+  
+    &::before {
+      content: "";
+      width: 1px;
+      height: 50px;
+      background: hsla(0, 0%, 49%, 0.4);
+      position: absolute;
+      left: 13px;
+      top: -70px;
+    }
+  
+    ul {
+      &::after {
+        font-family: "Oswald", sans-serif;
+        color: #888;
+        content: "SOCIAL";
+        position: absolute;
+        left: -28px;
+        top: -135px;
+        letter-spacing: 5px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  
+  .overlay {
+    height: 100vh;
+    // width: 100vw;
+    // display: none;
+    background:#111;
+    position: absolute;
+    z-index: 9;
+    animation: overlay .8s ease-in normal;
+  
+    @keyframes overlay {
+      0% {
+        left: 0%;
+        width: 100vw;
+      }
+      // 25% {
+      //   left: 25%;
+      //   width: 25vw;
+      // }
+    
+    50% {
+      left: 50%;
+      width: 50vw;
+    }
+   
+    100% {
+      left: 100%;
+      width: 0px;
+    }
+    }
+  }
+}

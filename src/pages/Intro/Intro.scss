@@ -1,0 +1,197 @@
+.section1 {
+    padding-top: 100px;
+    height: 100%;
+    background-color: #212121;
+    color: white;
+    overflow: hidden;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: hsla(0, 0%, 40%, 0.3);
+      left: 18%;
+      z-index: 99;
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background: hsla(0, 0%, 40%, 0.3);
+      z-index: 99;
+      right: 18% !important;
+    }
+  
+    .hero {
+      width: 70%;
+      margin-top: 190px;
+      margin-left: 20%;
+      width: max-content;
+      .title {
+        font-size: 4rem;
+        
+        animation: fadeInLeft 1.5s both;
+  
+        &:hover {
+          mask-image: -webkit-linear-gradient(165deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+      mask-size: 200%;
+      -webkit-animation: shine 1s infinite;
+      animation: shine 1s infinite;
+        }
+      }
+      .subtitle {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        animation: fadeInLeft 1.5s both;
+  
+        &::before {
+          content: "";
+          position: absolute;
+          margin-left: 210px;
+          margin-top: 10px;
+          width: 65px;
+          height: 1px;
+          background: #fb9801;
+          transition: all 0.3s;
+        }
+      }
+  
+  
+  
+      @media (max-width:768px) {
+          text-align: center;
+          margin-left: auto;
+  
+          .title {
+              font-size: 32px;
+              
+          }
+          .subtitle {
+              font-size: .9rem;
+              letter-spacing: 4px;
+              &::before {
+                  display: none;
+              }
+          }
+      }
+  
+  
+      // floating letters
+      div {
+        h1 {
+          color: #fff;
+          font-size: 8em;
+          position: absolute;
+          transform: translate(-50%, -50%);
+  
+          &:nth-child(1) {
+            color: transparent;
+            -webkit-text-stroke: 2px #03a9f4;
+        }
+  
+        &:nth-child(2) {
+          color: #03a9f4;
+          animation: animate 4s ease-in-out infinite;
+  
+          @keyframes animate {
+            0%,
+            100% {
+              clip-path: polygon(
+                0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%
+              );
+            }
+          
+            50% {
+              clip-path: polygon(
+                0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .scroll-down {
+    svg {
+      width: 30px;
+      height: 30px;
+      animation: pulse 2s infinite;
+  
+      @keyframes pulse {
+        0% {
+          -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+      }
+      
+      50% {
+          -webkit-transform: translate(0, 10px);
+          transform: translate(0, 30px);
+      }
+      100% {
+          -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+      }
+      }
+    }
+  
+  }
+    .space {
+      width: 25vw;
+      margin-left: auto;
+      right: 0;
+      position: absolute;
+      bottom: -70px;
+      img {
+        animation: 4s ease 0s infinite normal none running spacewoman;
+  
+      }
+    
+      @keyframes spacewoman {
+        0% {
+          transform: translateY(-10px);
+      }
+      
+      50% {
+          transform: translateY(15px) translateX(15px);
+      }
+     
+      100% {
+          transform: translateY(-10px);
+      }
+      }
+    }
+  
+    @media (max-width:768px) {
+  
+      .space {
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+  
+    }
+  }

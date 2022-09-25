@@ -1,0 +1,30 @@
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    position: fixed;
+    top: 50%;
+    left:90%;
+    z-index: 2222;
+    
+    a {
+        fill: #fff;
+    background: 0 0;
+    display: block;
+    margin: 0 -9px;
+    padding: 9px;
+    position: relative;
+
+    span {
+        background: #fff;
+        border-radius: 7px;
+        box-shadow: 0 0 1px #303030;
+        content: "";
+        display: block;
+        height: 15px;
+        opacity: .5;
+        transition: .25s;
+        width: 15px;
+    }
+    }
+}

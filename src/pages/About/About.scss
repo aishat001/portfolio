@@ -1,0 +1,47 @@
+.about-wrapper {
+    background-color:#111;
+    color:white;
+    // padding: 80px 20px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+
+    @media (max-width: 375px) {
+        padding: 50px 0px;
+    }
+
+    .about-me {
+        width: 60vw;
+        margin: auto;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+        .title-wrapper {
+            h2 {
+                color: rgba(252, 246, 244, 0.1);
+    font-size: 36px;
+    z-index: 0;
+    width: fit-content;
+    border-bottom: 1px solid #e4aa4899;
+
+           
+            }
+            .title {
+                .Typewriter {
+                    color: aqua;
+                }
+            }
+        }
+
+        p {
+            line-height: 2;
+            // width: 40vw;
+        }
+
+        button {
+            width: fit-content;
+        }
+    }
+}

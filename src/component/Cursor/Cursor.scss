@@ -1,0 +1,15 @@
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    // border:2px solid rgb(160, 17, 17);
+    background:rgba(255, 255, 255, 0.199);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease;
+    transition-property: background, border, transform;
+    transform-origin: 150%, 150%;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.4s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    z-index: 999;
+}
