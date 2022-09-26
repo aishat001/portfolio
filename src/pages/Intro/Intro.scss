@@ -1,35 +1,36 @@
 .section1 {
-    padding-top: 100px;
-    height: 100%;
+    height: calc(100vh - 70px);
     background-color: #212121;
     color: white;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 1px;
-      height: 100%;
-      background: hsla(0, 0%, 40%, 0.3);
-      left: 18%;
-      z-index: 99;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   width: 1px;
+    //   height: 100%;
+    //   background: hsla(0, 0%, 40%, 0.3);
+    //   left: 18%;
+    //   z-index: 99;
+    // }
   
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 1px;
-      height: 100%;
-      background: hsla(0, 0%, 40%, 0.3);
-      z-index: 99;
-      right: 18% !important;
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   width: 1px;
+    //   height: 100%;
+    //   background: hsla(0, 0%, 40%, 0.3);
+    //   z-index: 99;
+    //   right: 18% !important;
+    // }
   
     .hero {
       width: 70%;
-      margin-top: 190px;
       margin-left: 20%;
       width: max-content;
       .title {

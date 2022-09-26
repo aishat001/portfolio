@@ -31,21 +31,19 @@ const About = () => {
         <p data-aos="zoom-in">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere hic
           dolores architecto amet ut? Adipisci sunt natus soluta, debitis, eos
-          expedita itaque fugiat beatae ipsa, dolorem numquam voluptatibus quod
           consequatur.
           <br />
           <br />
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere hic
-          dolores architecto amet ut? Adipisci sunt natus soluta, debitis, eos
-          expedita itaque fugiat beatae ipsa, dolorem numquam voluptatibus quod
-          consequatur.
+          dolores architecto amet ut? Adipisci sunt natus soluta, debitis.
         </p>
 
-        <button className="theme-btn" data-aos="flip-left">
           <a href="https://www.canva.com/design/DAEur8jptC0/c8ptjPm_f9mfRl409vdy0w/view?utm_content=DAEur8jptC0&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu">
-         My Resume
+          <button className="theme-btn" data-aos="flip-left">
+              <span>
+         My Resume</span>
+         </button>
           </a>
-        </button>
       </div>
     </section>
   );
