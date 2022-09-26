@@ -23,8 +23,8 @@ const Contact = () => {
           <h5>Reach out to us, <br/>we can make something awesome together</h5> 
 
           <div className="flex flex-col gap-5 mt-10">
-          <a href='mailto:waheedaishat@gmail.com' target="blank"><button><span className='flex flex-row items-center gap-3'> <AiFillMail/>waheedaishat@gmail.com</span></button></a>
-          <a href='https://wa.me/2348140308878' target="_blank"><button><span className='flex flex-row items-center gap-3'><BsWhatsapp/>08140308878</span></button></a>
+          <a href='mailto:waheedaishat@gmail.com' target="blank"><button><span className='flex flex-row items-center gap-2'> <AiFillMail/>Send a mail</span></button></a>
+          <a href='https://wa.me/2348140308878' target="_blank"><button><span className='flex flex-row items-center gap-2'><BsWhatsapp/>08140308878</span></button></a>
 
           </div>
       </div>

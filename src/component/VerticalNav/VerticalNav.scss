@@ -5,7 +5,7 @@
     position: fixed;
     top: 50%;
     left:90%;
-    z-index: 2222;
+    z-index: 200;
     
     a {
         fill: #fff;
@@ -16,15 +16,16 @@
     position: relative;
 
     span {
-        background: #fff;
-        border-radius: 7px;
+        background: #000000a1;
+        border-radius: 100%;
         box-shadow: 0 0 1px #303030;
         content: "";
         display: block;
-        height: 15px;
-        opacity: .5;
-        transition: .25s;
-        width: 15px;
+        height: 20px;
+        /* opacity: 0.3; */
+        border: 1px solid #ffffff69;
+        transition: 0.25s;
+        width: 20px;
     }
     }
 }
