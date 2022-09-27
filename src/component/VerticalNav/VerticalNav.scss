@@ -3,7 +3,7 @@
     flex-direction: column;
     gap:20px;
     position: fixed;
-    top: 50%;
+    top: 20%;
     left:90%;
     z-index: 200;
     
@@ -39,8 +39,8 @@
         background-blend-mode: multiply;
         color: white !important;
         border-radius: 100%;
-        width: 40px;
-        height: 40px; 
+        width: 20px;
+        height: 20px; 
         background: linear-gradient(225deg, #181818, #2e2e2e);
         box-shadow: -5px 5px 10px #191919,
                     5px -5px 10px #292929;

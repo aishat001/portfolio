@@ -16,9 +16,13 @@ const Header = () => {
 
   return (
     <>
-        <header className='bg-dark header-wrapper flex ' id='header-menu'>
-      <h1 className='mt-0' data-aos="fade-down">Aeeshah</h1>
+        <header className='bg-dark header-wrapper flex justify-between' id='header-menu'>
+      <h1 className='mt-0' data-aos="fade-down">aeesh</h1>
 
+      <div className='freelance'>
+        <div className="circle"></div>
+        <a href='mailto:waheedaishat@gmail.com'>Available for freelance</a>
+      </div>
       <button className='menu ml-auto flex md:hidden' data-aos="fade-down" onClick={() => {
         setopenNav(!openNav)
       }}>
@@ -40,12 +44,12 @@ const Header = () => {
      
       </button>
 
-      <div className='hidden md:block ml-auto'>
+      <div className='hidden md:block '>
       <ul className='flex flex-row items-center justify-center gap-5'>
-          <li className='home'><a href="#home">Home</a></li>
+          {/* <li className='home'><a href="#home">Home</a></li> */}
           <li className='active'><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#portfolio">Works</a></li>
+          {/* <li><a href="#contact">Contact</a></li> */}
         </ul>
       </div>
 

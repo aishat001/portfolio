@@ -9,19 +9,25 @@ import Portfolio from "../Portfolio/Portfolio";
 import Contact from "../Contact/Contact";
 import Intro from "../Intro/Intro";
 import VerticalNav from "../../component/VerticalNav/VerticalNav";
+import { useState, useEffect } from "react";
 
 const Homepage = () => {
+
+  
   return (
+    
+  
     <div className="home">
       <Header />
       <VerticalNav/>
       <div className="sections">
+        
       <Intro/>
       <About/>
       <Portfolio/>
       <Contact/>
       </div>
-      <div className="social-medials" data-aos="fade-up-right">
+      <div className="social-medials twisterInDown" data-aos="fade-up-right">
         <ul className="flex flex-col gap-4">
           <li>
             <Link to={""}>
@@ -110,6 +116,9 @@ const Homepage = () => {
             </Link>
           </li>
         </ul>
+      </div>
+      <div className="copyright">
+      © 2022
       </div>
     </div>
   );

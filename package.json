@@ -11,6 +11,7 @@
     "aos": "^2.3.4",
     "framer-motion": "^6.5.1",
     "ityped": "^1.0.3",
+    "magic.css": "^1.4.8",
     "node-sass": "^7.0.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

@@ -30,7 +30,6 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-wrapper" id="portfolio">
-              <div className="sample"></div>
 
       <div className="portfolio">
         <h2 className="port-title">Portfolio</h2>

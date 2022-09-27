@@ -15,3 +15,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Neuemontreal';
+  src: url('https://uploads-ssl.webflow.com/61ffb7e3a4bdb5613297a19f/621a35c45937feb5f2d21335_NeueMontreal-Regular.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/61ffb7e3a4bdb5613297a19f/621a35c4249f22915d2fe475_NeueMontreal-Regular.woff') format('woff'), url('https://uploads-ssl.webflow.com/61ffb7e3a4bdb5613297a19f/625408e1b0851f6688194bef_NeueMontreal-Regular.ttf') format('truetype'), url('https://uploads-ssl.webflow.com/61ffb7e3a4bdb5613297a19f/61ffc41bdce21e5bc1410db5_NeueMontreal-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Almarena almarena display';
+  src: url('https://uploads-ssl.webflow.com/61ffb7e3a4bdb5613297a19f/621a35b27f3078178900f91e_Almarena%20-%20Almarena%20Display%20Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Almarena almarena display';
+  src: url('https://uploads-ssl.webflow.com/61ffb7e3a4bdb5613297a19f/621a35b2a245b905d6adb724_Almarena%20-%20Almarena%20Display%20Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
