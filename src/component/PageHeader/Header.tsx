@@ -6,6 +6,12 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [openNav, setopenNav] = useState(false);
 
+  if(openNav === true) {
+    document.body.style.overflow = "hidden"
+  }  else {
+    document.body.style.overflow = "auto"
+
+  }
   // useEffect(() => {
   //   if(openNav === true) {
   //     const headerMenu = document.getElementById('header-menu')
@@ -17,13 +23,16 @@ const Header = () => {
   return (
     <>
         <header className='bg-dark header-wrapper flex justify-between' id='header-menu'>
-      <h1 className='mt-0' data-aos="fade-down">aeesh</h1>
+          <div className='logo-c' >
+            <img src="src/images/logo1.png" alt="" />
+          </div>
+      {/* <h1 className='mt-0' >aeesh</h1> */}
 
       <div className='freelance'>
         <div className="circle"></div>
         <a href='mailto:waheedaishat@gmail.com'>Available for freelance</a>
       </div>
-      <button className='menu ml-auto flex md:hidden' data-aos="fade-down" onClick={() => {
+      <div className='menu ml-auto flex md:hidden' data-aos="fade-down" onClick={() => {
         setopenNav(!openNav)
       }}>
         {
@@ -42,7 +51,7 @@ const Header = () => {
 
         }
      
-      </button>
+      </div>
 
       <div className='hidden md:block '>
       <ul className='flex flex-row items-center justify-center gap-5'>
@@ -58,7 +67,8 @@ const Header = () => {
 
     {
       openNav === true && (
-        <nav className='md:hidden'>
+        <>
+        <div className='md:hidden nav'>
         <ul className='flex flex-col items-center justify-center gap-5'>
         <li><Link to="">Home</Link></li>
           <li><Link to="">About</Link></li>
@@ -66,7 +76,10 @@ const Header = () => {
           <li><Link to="">Contact</Link></li>
 
         </ul>
-      </nav>
+      </div>
+      <div className="nav-overlay"></div>
+
+      </>
       )
     }
     </>

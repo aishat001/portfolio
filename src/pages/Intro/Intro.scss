@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 
   // &::before {
   //   content: "";
@@ -33,6 +34,7 @@
     width: 70%;
     margin-left: 20%;
     width: max-content;
+    
     .title {
       font-size: 3em;
       font-family: "Almarena almarena display";
@@ -77,6 +79,8 @@
     @media (max-width: 768px) {
       // text-align: center;
       margin-left: auto;
+      position: relative;
+      top: -30px;
 
       .subtitle {
         font-size: 0.9rem;
@@ -217,8 +221,11 @@
     font-family: 'NeueMontrealRegular';
     pointer-events: auto;
     transition: background-color 0.3s ease 0s;
-    backdrop-filter: blur(6px);
+    // backdrop-filter: blur(6px);
     border: 0.5px solid rgb(64, 64, 64);
+    padding: 14px 24px 14px 36px;
+
+ 
 
     @media (min-width: 768px) {
       display: none;
@@ -231,15 +238,15 @@
         width: 6px;
         height: 6px;
         border-radius: 100%;
-        background-color: rgb(151, 147, 191);
+        // background-color: rgb(151, 147, 191);
     }
 
     a {
         text-decoration: none;
 letter-spacing: 0.3px;
 transition: color 0.3s ease 0s;
-padding: 14px 24px 14px 36px;
     }
+
    }
 }
 
@@ -271,4 +278,9 @@ padding: 14px 24px 14px 36px;
     // background:transparent;
   }
   }
+}
+
+.freelance:hover {
+    background-color: #4444447d !important;
+  
 }

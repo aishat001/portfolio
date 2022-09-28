@@ -24,10 +24,7 @@ const Intro = () => {
           <div className="circle"></div>
           <a href='mailto:waheedaishat@gmail.com'>Available for freelance</a>
         </div>
-        {/* <div>
-          <h1>Front end</h1>
-          <h1>Front end</h1>
-        </div> */}
+
         {/* <button className="theme-btn mt-5" data-aos="flip-left"><a href="https://wa.me/2348140308878" target={"_blank"}><span>contact me</span></a></button> */}
   
         <div className="flex justify-start relative  top-10 scroll-down">
