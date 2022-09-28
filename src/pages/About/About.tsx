@@ -1,11 +1,19 @@
 import TypewriterComponent from "typewriter-effect";
+import Header from "../../component/PageHeader/Header";
+import Socials from "../../component/Socials/Socials";
+import VerticalNav from "../../component/VerticalNav/VerticalNav";
 import "./About.scss";
 
 const About = () => {
 
 
   return (
-    <section className="about-wrapper" id="about">
+    <div>
+      <Header/>
+      <VerticalNav />
+
+{/*ABout page  */}
+      <section className="about-wrapper" id="about">
       <div className="about-me">
         <div className="title-wrapper">
           <span className="title inline-flex gap-2"
@@ -46,6 +54,10 @@ const About = () => {
           </a>
       </div>
     </section>
+
+      <Socials/>
+    </div>
+
   );
 };
 

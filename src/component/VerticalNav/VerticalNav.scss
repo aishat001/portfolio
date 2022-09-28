@@ -1,11 +1,12 @@
 .navigation {
     display: flex;
-    flex-direction: column;
-    gap:20px;
+    flex-direction: revert;
+    gap: 20px;
     position: fixed;
-    top: 20%;
-    left:90%;
-    z-index: 200;
+    bottom: 5%;
+    left: 30vw;
+    right: 20vw;
+    z-index: 3;
     
     // a {
     //     fill: #fff;

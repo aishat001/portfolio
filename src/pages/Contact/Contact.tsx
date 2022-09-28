@@ -1,10 +1,16 @@
 import React from 'react'
 import { AiFillMail, AiFillPhone } from 'react-icons/ai';
 import {BsWhatsapp} from 'react-icons/bs'
+import Header from '../../component/PageHeader/Header';
+import Socials from '../../component/Socials/Socials';
+import VerticalNav from '../../component/VerticalNav/VerticalNav';
 import "./contact.scss";
 
 const Contact = () => {
   return (
+    <div>
+<Header/>
+{/* Contact */}
     <div className='contact-wrapper' id="contact">
       <div className="contact">
         <div className="title-wrapper">
@@ -29,6 +35,11 @@ const Contact = () => {
           </div>
       </div>
       {/* <h1 className='contactbg'>CONTACT</h1> */}
+    </div>
+
+    <VerticalNav />
+
+<Socials/>
     </div>
   )
 }

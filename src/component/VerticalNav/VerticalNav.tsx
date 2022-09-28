@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom"
 import "./VerticalNav.scss"
 
 const VerticalNav = () => {
   return (
     <div className='navigation'>
-      <a href="#home" className="active"><span></span></a>
-      <a href="#about"><span></span></a>
-      <a href="#portfolio"><span></span></a>
-      <a href="#contact"><span></span></a>
+      <Link to="/"><span></span></Link>
+      <Link to="/about"><span></span></Link>
+      <Link to="/works"><span></span></Link>
+      <Link to="/contact"><span></span></Link>
 
     </div>
   )

@@ -1,21 +1,11 @@
-import "./Homepage.scss";
-import Header from "../../component/PageHeader/Header";
-import { Link } from "react-router-dom";
-import Intro from "../Intro/Intro";
-import VerticalNav from "../../component/VerticalNav/VerticalNav";
-import { useState, useEffect } from "react";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import "./Socials.scss"
 
-const Homepage = () => {
-
-  
+const Socials = () => {
   return (
-    
-  
-    <div className="home">
-      <Header />
-      <VerticalNav/>
-      <Intro/>
-      <div className="social-medials twisterInDown" data-aos="fade-up-right">
+    <div>
+            <div className="social-medials twisterInDown" data-aos="fade-up-right">
         <ul className="flex flex-col gap-4">
           <li>
             <Link to={""}>
@@ -105,11 +95,12 @@ const Homepage = () => {
           </li>
         </ul>
       </div>
+
       <div className="copyright">
       © 2022
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Homepage;
+export default Socials

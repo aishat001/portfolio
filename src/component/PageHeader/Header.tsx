@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [openNav, setopenNav] = useState(false);
+  const [delayEffect, setdelayEffect] = useState(true);
 
   if(openNav === true) {
     document.body.style.overflow = "hidden"
@@ -12,13 +13,8 @@ const Header = () => {
     document.body.style.overflow = "auto"
 
   }
-  // useEffect(() => {
-  //   if(openNav === true) {
-  //     const headerMenu = document.getElementById('header-menu')
-  //     headerMenu.style.backgroundColor = "black"
 
-  //   }
-  // })
+
 
   return (
     <>
@@ -56,8 +52,8 @@ const Header = () => {
       <div className='hidden md:block '>
       <ul className='flex flex-row items-center justify-center gap-5'>
           {/* <li className='home'><a href="#home">Home</a></li> */}
-          <li className='active'><a href="#about">About</a></li>
-          <li><a href="#portfolio">Works</a></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/works">Works</Link></li>
           {/* <li><a href="#contact">Contact</a></li> */}
         </ul>
       </div>
@@ -68,18 +64,22 @@ const Header = () => {
     {
       openNav === true && (
         <>
-        <div className='md:hidden nav'>
+        <nav className='md:hidden nav'>
         <ul className='flex flex-col items-center justify-center gap-5'>
-        <li><Link to="">Home</Link></li>
-          <li><Link to="">About</Link></li>
-          <li><Link to="">Portfolio</Link></li>
-          <li><Link to="">Contact</Link></li>
+        <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/works">Works</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
 
         </ul>
-      </div>
+
+      </nav>
+
       <div className="nav-overlay"></div>
+      <div className="nav-overlay1"></div>
 
       </>
+      
       )
     }
     </>

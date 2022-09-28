@@ -5,6 +5,10 @@ import './App.scss';
 import Cursor from './component/Cursor/Cursor';
 import Homepage from './pages/Homepage/Homepage';
 import Loader from './component/Loader/Loader';
+import About from './pages/About/About';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Contact from './pages/Contact/Contact';
+import Intro from './pages/Intro/Intro';
 
 function App() {
   const [loading, setLoding] = useState(true);
@@ -44,7 +48,13 @@ function App() {
       {/* <span ref={cursorRef}></span> */}
     <Cursor cursorRef={cursorRef}/>
       <Routes>
-        <Route path="/"  element={loading ? <Loader/> : <Homepage/>}/>
+        <Route path="/"  element={loading ? <Loader/> : <Intro/>}/>
+        <Route path='/' element={<Homepage/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/works' element={<Portfolio/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+
+
       </Routes>
     </div>
   

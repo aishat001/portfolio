@@ -1,0 +1,51 @@
+.social-medials {
+    // top: 70%;
+    left: 20px;
+    bottom: 4%;
+    position: fixed;
+    z-index: 4;
+  
+    &::before {
+      content: "";
+      width: 1px;
+      height: 50px;
+      background: hsla(0, 0%, 49%, 0.4);
+      position: absolute;
+      left: 13px;
+      top: -70px;
+    }
+  
+    // ul {
+    //   &::after {
+    //     font-family: "Oswald", sans-serif;
+    //     color: #888;
+    //     content: "SOCIAL";
+    //     position: absolute;
+    //     left: -28px;
+    //     top: -135px;
+    //     letter-spacing: 5px;
+    //     transform: rotate(-90deg);
+    //   }
+    // }
+  }
+  
+
+
+  .copyright {
+    right: 20px;
+    bottom: 4%;
+    position: fixed;
+    color:white;
+    z-index: 200;
+  
+    &::before {
+      content: "";
+      width: 50px;
+      height: 1px;
+      background: hsla(0deg, 0%, 49%, 0.4);
+      position: absolute;
+      top: 12px;
+      right: 60px;
+  
+    } 
+   }

@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Header from "../../component/PageHeader/Header";
+import Socials from "../../component/Socials/Socials";
+import VerticalNav from "../../component/VerticalNav/VerticalNav";
 import { dashboards } from "../../Data";
 import PortfolioList from "../PortfolioList/PortfolioList";
 import "./Portfolio.scss";
@@ -29,6 +32,11 @@ const Portfolio = () => {
 
 
   return (
+<div>
+    <Header/>
+    <VerticalNav />
+
+{/* Worrks ****************** */}
     <div className="portfolio-wrapper" id="portfolio">
 
       <div className="portfolio">
@@ -156,6 +164,10 @@ const Portfolio = () => {
   </div>
       </div>
     </div>
+    <Socials/>
+</div>
+
+
   );
 };
 
