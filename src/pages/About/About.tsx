@@ -99,23 +99,35 @@ const About = () => {
         </section>
 
         {/* progress */}
-        {/* <div className="progress">
-         <div style={style}>
-      <Progress.Circle />
+        <div className="skills" >
+        <div className="title-wrapper">
+              <h2
+                data-aos="fade-left"
+                //   data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              >
+                SkillSet
+              </h2>
+            </div>
+            <div className="progress" >
+
+         <div style={style}>Html
+      <Progress.Circle percent={90} className="p-circle"/>
     </div>
-    <div style={style}>
-      <Progress.Circle percent={"HTML"} strokeColor="#ffc107" />
+    <div style={style}>CSS
+      <Progress.Circle percent={80} strokeColor="#ffc107" className="p-circle"/>
     </div>
-    <div style={style}>
-      <Progress.Circle percent={"Css"} />
+    <div style={style}>React
+      <Progress.Circle percent={90} className="p-circle"/>
     </div>
-    <div style={style}>
-      <Progress.Circle percent={"ReactJs"}  />
+    <div style={style}>Javascript
+      <Progress.Circle percent={60}  className="p-circle"/>
     </div>
-    <div style={style}>
-      <Progress.Circle percent={"GSap"}  />
+    <div style={style}>Gatsby
+      <Progress.Circle percent={50}  className="p-circle"/>
           </div>
-         </div> */}
+          </div>
+         </div>
       <Socials />
     </div>
   );

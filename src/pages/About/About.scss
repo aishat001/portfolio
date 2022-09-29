@@ -2,11 +2,13 @@
 .about-wrapper {
     background-color:#212121;
     height: 100%;
+    overflow: hidden;
 .about-C {
     color:white;
     // padding: 80px 20px;
     position: relative;
     display: flex;
+    height: 100vh;
 
     @media (max-width: 375px) {
         padding: 50px 0px;
@@ -96,11 +98,47 @@
     height: 100vh;
     z-index: 1;
 }
-
-.progress {
-    display: flex;
-    padding: 40px;
-    
 }
 
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+
+    .title-wrapper {
+        h2 {
+            color: rgba(252, 246, 244, 0.1);
+font-size: 36px;
+z-index: 0;
+width: fit-content;
+border-bottom: 1px solid #e4aa4899;
+
+
+        }}
+    .progress {
+        display: flex;
+        width:50vw;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+.p-circle{
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem;
+
+    .title-wrapper {
+        width: 65vw !important;
+    }
+    .progress {
+        width: 65vw;
+        flex-direction: column;
+    }
+}
 }
