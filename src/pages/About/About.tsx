@@ -99,7 +99,7 @@ const About = () => {
         </section>
 
         {/* progress */}
-        <div className="progress">
+        {/* <div className="progress">
          <div style={style}>
       <Progress.Circle />
     </div>
@@ -115,7 +115,7 @@ const About = () => {
     <div style={style}>
       <Progress.Circle percent={"GSap"}  />
           </div>
-         </div>
+         </div> */}
       <Socials />
     </div>
   );
