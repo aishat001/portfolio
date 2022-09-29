@@ -1,22 +1,28 @@
+
 .about-wrapper {
     background-color:#212121;
+    height: 100%;
+.about-C {
     color:white;
     // padding: 80px 20px;
     position: relative;
-    height: 100vh;
     display: flex;
 
     @media (max-width: 375px) {
         padding: 50px 0px;
     }
+    
 
     .about-me {
-        width: 60vw;
-        margin: auto;
+        width: 100vw;
         text-align: start;
         display: flex;
-        flex-direction: column;
         gap: 2rem;
+        overflow: hidden;
+        gap: 5rem;
+        justify-content: center;
+        position: relative;
+        top: 20vh;
         
         .title-wrapper {
             h2 {
@@ -26,12 +32,23 @@
     width: fit-content;
     border-bottom: 1px solid #e4aa4899;
 
-           
+ 
             }
-            .title {
+ 
+        }
+
+        .content-wrapper {
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+                        .title {
                 .Typewriter {
                     color: aqua;
                 }
+            }
+            h3 {
+                font-weight: 900;
             }
         }
 
@@ -43,5 +60,47 @@
         button {
             width: fit-content;
         }
+
+    
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            // position: unset;
+            align-items:center;
+            gap: 2rem;
+            top: 1rem;
+
+            .content-wrapper {
+                width: 65vw;
+            }
+
+            .title-wrapper {
+                width: 65vw;
+
+                h2 {
+                    // margin-top: 40px;
+                }
+            }
+        }
+        @media (max-width: 375px) {
+            padding-top: 2rem;
+       }
     }
+
+
+}    .about-Overlay {
+    position: fixed;
+    background-color:#000000;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.progress {
+    display: flex;
+    padding: 40px;
+    
+}
+
 }

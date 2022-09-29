@@ -19,6 +19,7 @@
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-tsparticles": "^2.0.6",
+    "rsuite": "^5.19.0",
     "sass": "^1.55.0",
     "tsparticles": "^2.0.6",
     "typewriter-effect": "^2.19.0"

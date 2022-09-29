@@ -4,6 +4,7 @@ import App from './App'
 import './index.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+ import 'rsuite/dist/rsuite.min.css';
 AOS.init();
 import { BrowserRouter } from 'react-router-dom';
 
