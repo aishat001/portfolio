@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Header.scss";
 import { AiOutlineClose } from "react-icons/ai"
 import { Link } from 'react-router-dom';
+import logo from "/src/images/logo1.png"
 
 const Header = () => {
   const [openNav, setopenNav] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
     <>
         <header className='bg-dark header-wrapper flex justify-between' id='header-menu'>
           <div className='logo-c' >
-            <img src="src/images/logo1.png" alt="" />
+            <img src={logo} alt="" />
           </div>
       {/* <h1 className='mt-0' >aeesh</h1> */}
 

@@ -37,7 +37,7 @@ const Contact = () => {
       {/* <h1 className='contactbg'>CONTACT</h1> */}
     </div>
 
-    <VerticalNav />
+    {/* <VerticalNav /> */}
 
 <Socials/>
     </div>

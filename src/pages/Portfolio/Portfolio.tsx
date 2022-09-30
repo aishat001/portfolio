@@ -34,7 +34,7 @@ const Portfolio = () => {
   return (
 <div>
     <Header/>
-    <VerticalNav />
+    {/* <VerticalNav /> */}
 
 {/* Worrks ****************** */}
     <div className="portfolio-wrapper" id="portfolio">

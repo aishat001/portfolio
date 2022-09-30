@@ -50,7 +50,7 @@ const Intro = () => {
         {effect && <div className="overlay"></div>}
       </section>
       <Socials />
-      <VerticalNav />
+      {/* <VerticalNav /> */}
     </div>
   );
 };

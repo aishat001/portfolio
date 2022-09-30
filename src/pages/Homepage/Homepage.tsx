@@ -13,7 +13,7 @@ const Homepage = () => {
   
     <div className="home">
       <Header />
-      <VerticalNav/>
+      {/* <VerticalNav/> */}
       <Intro/>
       <div className="social-medials twisterInDown" data-aos="fade-up-right">
         <ul className="flex flex-col gap-4">
