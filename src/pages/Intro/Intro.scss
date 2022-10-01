@@ -64,16 +64,16 @@
       @media (max-width: 479px) {
         font-size: 3.7vw;
       }
-      &::before {
-        content: "";
-        position: absolute;
-        margin-left: 210px;
-        margin-top: 10px;
-        width: 65px;
-        height: 1px;
-        background: #fb9801;
-        transition: all 0.3s;
-      }
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   margin-left: 210px;
+      //   margin-top: 10px;
+      //   width: 65px;
+      //   height: 1px;
+      //   background: #fb9801;
+      //   transition: all 0.3s;
+      // }
     }
 
     @media (max-width: 768px) {

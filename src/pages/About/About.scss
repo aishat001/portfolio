@@ -98,10 +98,6 @@
 
             .title-wrapper {
                 width: 65vw;
-
-                h2 {
-                    // margin-top: 40px;
-                }
             }
         }
         @media (max-width: 375px) {
@@ -118,17 +114,15 @@
     z-index: 1;
 }
 
+@media (max-width: 1024px) {
+    padding-top: 4rem;
+}
+@media (max-width: 465px) {
+    padding-top: 5rem;
+}
 }
 
-.download-R {
-    // position: absolute;
-    // right: 30%;
-    // top: 65%;
-    // vertical-align: baseline;
-    // color: #fff;
-    // background-color: transparent;
-    // z-index: 11;
-}
+
 .click_and_hold {
     color: #fff;
     z-index: 2;
@@ -259,3 +253,33 @@ border-bottom: 1px solid #e4aa4899;
     }
 }
 }
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0, 255, 255, 0.39);
+    position: absolute;
+    z-index: 99999999999999;
+  
+    animation: overlay 2s ease-in normal;
+    
+  
+    @keyframes overlay {
+      0% {
+        left: 0%;
+        width: 100vw;
+      }
+    
+    50% {
+      left: 50%;
+      width: 50vw;
+    }
+   
+    100% {
+      left: 100%;
+      width: 0px;
+      // opacity: 0;
+      // background:transparent;
+    }
+    }
+  }

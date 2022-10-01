@@ -8,14 +8,16 @@
     &::before {
       content: "";
       width: 1px;
-      height: 50px;
+      height: 30px;
       background: hsla(0, 0%, 49%, 0.4);
       position: absolute;
       left: 13px;
-      top: -70px;
+      top: -40px;
     }
   
-    // ul {
+    ul {
+        margin-bottom: 0px;
+    }
     //   &::after {
     //     font-family: "Oswald", sans-serif;
     //     color: #888;
@@ -40,12 +42,12 @@
   
     &::before {
       content: "";
-      width: 50px;
+      width: 30px;
       height: 1px;
       background: hsla(0deg, 0%, 49%, 0.4);
       position: absolute;
       top: 12px;
-      right: 60px;
+      right: 50px;
   
     } 
    }

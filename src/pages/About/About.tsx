@@ -9,11 +9,11 @@ import "./About.scss";
 import Footer from "../../component/Footer/Footer";
 
 const About = () => {
-  const [showOverlay, setshowOverlay] = useState(true);
+  const [effect, setEffect] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setshowOverlay(false);
+      setEffect(false);
     }, 2000);
   }, []);
 
@@ -25,29 +25,19 @@ const About = () => {
 
   return (
     <>
-          <Header />
+      {effect && <div className="overlay"></div>}
 
-    <div className="about-wrapper">
-      {/* <VerticalNav /> */}
-      {showOverlay && (
-        <div
-          className="about-Overlay"
-          data-aos="fade-left"
-          data-aos-offset="300"
-          // data-aos-easing="ease-in-sine"
-          data-aos-duration="3000"
-          // data-aos-anchor-placement="top-center"
-        ></div>
-      )}
-      {/*ABout page  */}
+      <Header />
 
-      <section className="about-C puffIn" id="about">
-        {!showOverlay && (
+      <div className="about-wrapper">
+        {/*ABout page  */}
+
+        <section className="about-C puffIn" id="about">
           <div className="about-me">
             <div className="title-wrapper">
               <h2
                 data-aos="fade-left"
-                //   data-aos-offset="300"
+                data-aos-delay="2000"
                 data-aos-easing="ease-in-sine"
               >
                 About Me
@@ -58,7 +48,7 @@ const About = () => {
               <span
                 className="title inline-flex gap-2"
                 data-aos="fade-right"
-                //   data-aos-offset="300"
+                data-aos-delay="2500"
                 data-aos-easing="ease-in-sine"
               >
                 Web{" "}
@@ -71,28 +61,53 @@ const About = () => {
                 />
               </span>
 
-              <h5>
-              HELPING BRANDS AND BUSINESSES COMMUNICATE WITH THEIR AUDIENCE IN A MEANINGFUL WAY
+              <h5 data-aos="fade-right" data-aos-delay="3000">
+                HELPING BRANDS AND BUSINESSES COMMUNICATE WITH THEIR AUDIENCE IN
+                A MEANINGFUL WAY
               </h5>
-              <p data-aos="zoom-in">
-              I love creating digital solutions to simplify people's everyday lives, make them more exciting and help them achieve their goals.
+              <p data-aos="fade-left" data-aos-delay="3000">
+                I love creating digital solutions to simplify people's everyday
+                lives, make them more exciting and help them achieve their
+                goals.
                 <br />
                 <br />
-                My skillset are React, Gatsby, JavaScript, Html, Css, Scss, Tailwind, Typescript, Api integration, version control, Trello,
+                My skillset are React, Gatsby, JavaScript, Html, Css, Scss,
+                Tailwind, Typescript, Api integration, version control, Trello,
               </p>
-              <div className="download-R py-5"><div className="click_and_hold flex items-center">
-                        <div className="circlehold">
-                            <span></span>
-                            <svg className="dsn-progress-circle-up" width="100%" height="100%" stroke="#fff" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet" fill="none">
-                                <path className="dsn-progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style={{strokeDasharray: '307.919, 307.919', strokeDashoffset: "309%" }}></path>
-                            </svg>
-                        </div>
-                        <i></i>
-                        <div className="hold_span">
-                        <a href="https://www.canva.com/design/DAEur8jptC0/c8ptjPm_f9mfRl409vdy0w/view?utm_content=DAEur8jptC0&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">
-                            Check Resume</a>
-                        </div>
-                    </div></div>
+              <div className="download-R py-5 ml-3" data-aos="zoom-in" data-aos-delay="3000">
+                <div className="click_and_hold flex items-center">
+                  <div className="circlehold">
+                    <span></span>
+                    <svg
+                      className="dsn-progress-circle-up"
+                      width="100%"
+                      height="100%"
+                      stroke="#fff"
+                      viewBox="0 0 100 100"
+                      preserveAspectRatio="xMinYMin meet"
+                      fill="none"
+                    >
+                      <path
+                        className="dsn-progress-path"
+                        d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                        style={{
+                          strokeDasharray: "307.919, 307.919",
+                          strokeDashoffset: "309%",
+                        }}
+                      ></path>
+                    </svg>
+                  </div>
+                  <i></i>
+                  <div className="hold_span border-b-2">
+                    <a
+                      href="https://www.canva.com/design/DAEur8jptC0/c8ptjPm_f9mfRl409vdy0w/view?utm_content=DAEur8jptC0&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu"
+                      target="_blank"
+                    >
+                      Check Resume
+                    </a>
+                  </div>
+                </div>
+              </div>
 
               {/* <a href="https://www.canva.com/design/DAEur8jptC0/c8ptjPm_f9mfRl409vdy0w/view?utm_content=DAEur8jptC0&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu">
                 <button className="theme-btn" data-aos="flip-left">
@@ -101,12 +116,10 @@ const About = () => {
               </a> */}
             </div>
           </div>
-        )}
+        </section>
 
-      </section>
-
-      {/* progress */}
-      {/* <div className="skills">
+        {/* progress */}
+        {/* <div className="skills">
         <div className="title-wrapper">
           <h2
             data-aos="fade-left"
@@ -153,10 +166,8 @@ const About = () => {
           </div>
         </div>
       </div> */}
- 
-
-    </div>
-         <Footer/>
+        <Footer />
+      </div>
       <Socials />
     </>
   );
