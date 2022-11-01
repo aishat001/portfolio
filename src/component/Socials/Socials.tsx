@@ -114,7 +114,7 @@ const Socials = () => {
         </ul>
       </div>
 
-      <div className="copyright">© 2022</div>
+      {/* <div className="copyright">© 2022</div> */}
     </>
   );
 };

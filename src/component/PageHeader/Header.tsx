@@ -18,10 +18,12 @@ const Header = () => {
 
 
   return (
-    <>
-        <header className='bg-dark header-wrapper flex justify-between' id='header-menu'>
+    <div className='header-w'>
+        <header className='bg-dark header flex justify-between' id='header-menu'>
           <div className='logo-c' >
+          <Link to="/">
             <img src={logo} alt="" />
+            </Link>
           </div>
       {/* <h1 className='mt-0' >aeesh</h1> */}
 
@@ -83,7 +85,9 @@ const Header = () => {
       
       )
     }
-    </>
+
+
+    </div>
 
   )
 }

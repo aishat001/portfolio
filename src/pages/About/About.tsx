@@ -25,7 +25,7 @@ const About = () => {
 
   return (
     <>
-      {effect && <div className="overlay"></div>}
+      {effect && <div className="about-overlay"></div>}
 
       <Header />
 
@@ -74,7 +74,11 @@ const About = () => {
                 My skillset are React, Gatsby, JavaScript, Html, Css, Scss,
                 Tailwind, Typescript, Api integration, version control, Trello,
               </p>
-              <div className="download-R py-5 ml-3" data-aos="zoom-in" data-aos-delay="3000">
+              <div
+                className="download-R py-5 ml-3"
+                data-aos="zoom-in"
+                data-aos-delay="3000"
+              >
                 <div className="click_and_hold flex items-center">
                   <div className="circlehold">
                     <span></span>
@@ -166,9 +170,9 @@ const About = () => {
           </div>
         </div>
       </div> */}
-        <Footer />
       </div>
       <Socials />
+      <Footer />
     </>
   );
 };

@@ -1,11 +1,13 @@
 .section1 {
-  height: 100vh;
+  height: calc(100vh - 44px);
   background-color: #212121;
   color: #f4f4f4;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  // position: relative;
+  padding-top: 60px;
   
 
   // &::before {
@@ -36,7 +38,9 @@
     width: max-content;
     
     .title {
-      font-size: 3em;
+      font-size: 5.9vw;
+      line-height: calc(1.1em + 0.5vw);
+    // font-size: calc(50px + 1vw);
       font-family: "Almarena almarena display";
       animation: fadeInLeft 1.5s both;
 
@@ -56,7 +60,11 @@
       }
     }
     .subtitle {
-      font-size: 1.15em;
+      // font-size: 1.15em;
+          font-size: calc(16px + 1vw);
+
+      line-height: calc(1.3em + 0.5vw);
+
       // text-transform: uppercase;
       font-family: "Neuemontreal";
       animation: fadeInLeft 1.5s both;
@@ -80,7 +88,7 @@
       // text-align: center;
       margin-left: auto;
       position: relative;
-      top: -50px;
+      // top: -50px;
 
       .subtitle {
         font-size: 0.9rem;
@@ -215,15 +223,15 @@
     border-radius: 40px;
     -webkit-box-align: center;
     align-items: center;
-    font-size: 9px;
+    font-size: 12px;
     letter-spacing: 0.2px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-family: 'NeueMontrealRegular';
     pointer-events: auto;
     transition: background-color 0.3s ease 0s;
     // backdrop-filter: blur(6px);
     border: 0.5px solid rgb(64, 64, 64);
-    padding: 14px 24px 14px 36px;
+    padding: 12px 22px 12px 34px;
 
  
 
@@ -253,7 +261,7 @@ transition: color 0.3s ease 0s;
 .overlay {
   width: 100vw;
   height: 100vh;
-  background:rgb(177, 49, 49);
+  background:rgba(0, 0, 0, 0.39);
   position: absolute;
   z-index: 9999;
 
