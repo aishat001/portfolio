@@ -25,7 +25,7 @@ export const AllPortfolio = [
         aos :"fade-down",
      easing:"linear",
     duration:"1000",
-        delay: "2200"
+        delay: "1200"
     },
     {
         id: 3,
@@ -38,7 +38,7 @@ export const AllPortfolio = [
         aos :"fade-down",
      easing:"linear",
     duration:"1000",
-        delay: "2400"
+        delay: "1400"
     },
     {
         id: 4,

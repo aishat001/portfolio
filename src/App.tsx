@@ -1,4 +1,4 @@
-import React from 'react';
+// @ts-nocheck 
 import { useState, useEffect, useRef } from 'react';
 import { Routes, Route } from 'react-router';
 import './App.scss';
@@ -22,34 +22,34 @@ function App() {
   }, []);
 
   onmousemove = (e) => {
-    // cursorRef.current.style.left = `${e.pageX}px`
-    // cursorRef.current.style.top = `${e.pageY}px`
+    cursorRef.current.style.left = `${e.pageX}px`
+    cursorRef.current.style.top = `${e.pageY}px`
   }
 
   console.log(cursorRef)
-  // onmousedown = (e) => {
-  //   const cursor = document.querySelector(".cursor");
-  //   cursor.style.border = "2px solid green"
-  //   cursor.style.background = "red"
+  onmousedown = (e) => {
+    const cursor = document.querySelector(".cursor");
+    cursor.style.border = "2px solid green"
+    cursor.style.background = "red"
 
-  // }
-  // onmouseup = (e) => {
-  //   const cursor = document.querySelector(".cursor");
-  //   cursor.style.border = ""
-  //   cursor.style.background = ""
+  }
+  onmouseup = (e) => {
+    const cursor = document.querySelector(".cursor");
+    cursor.style.border = ""
+    cursor.style.background = ""
 
-  // }
+  }
 
   
   return (
     <div className=''
     onMouseMove={ () => onmousemove}
     >
-      {/* <span ref={cursorRef}></span> */}
+      <span ref={cursorRef}></span>
     <Cursor cursorRef={cursorRef}/>
       <Routes>
         <Route path="/"  element={loading ? <Loader/> : <Intro/>}/>
-        <Route path='/' element={<Homepage/>}/>
+        {/* <Route path='/' element={<Homepage/>}/> */}
         <Route path='/about' element={<About/>}/>
         <Route path='/works' element={<Portfolio/>}/>
         <Route path='/contact' element={<Contact/>}/>

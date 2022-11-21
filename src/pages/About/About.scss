@@ -1,17 +1,15 @@
 
 .about-wrapper {
-    height: calc(100vh - 44px);
     background-color:#212121;
-    overflow: hidden;
     width: 100vw;
-    padding-top: 60px;
+    padding-top: 10rem;
+    min-height: 100vh;
 
 .about-C {
     color:white;
     // padding: 80px 20px;
     position: relative;
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items:center;
 
@@ -118,7 +116,7 @@
 }
 
 @media (max-width: 1024px) {
-    padding-top: 4rem;
+    // padding-top: 4rem;
 }
 @media (max-width: 465px) {
     padding-top: 5rem;
