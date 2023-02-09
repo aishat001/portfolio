@@ -81,7 +81,7 @@ const About = () => {
                 </p>
                 <p>
                 My skillset are React, Gatsby, JavaScript, Html, Css, Scss,
-                Tailwind, Typescript, Api integration, version control, Trello,
+                Tailwind, Typescript, Api integration, version control, Trello.
               </p>
               <div
                 className="download-R py-5 ml-3"
