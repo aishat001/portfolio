@@ -12,10 +12,18 @@ import Socials from "../../component/Socials/Socials";
 
 const Homepage = () => {
 
+  const [effect, setEffect] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setEffect(false);
+    }, 2000);
+  }, []);
   
   return (
-    
-  
+    <>
+  {
+  !effect && (
     <div className="home">
       <Header />
       {/* <VerticalNav/> */}
@@ -27,6 +35,12 @@ const Homepage = () => {
    <Socials/>
    <Footer/>
     </div>
+  )}
+
+{effect && <div className="overlay"></div>}
+
+    </>
+
   );
 };
 

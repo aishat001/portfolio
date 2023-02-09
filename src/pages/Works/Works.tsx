@@ -57,10 +57,10 @@ const Works = () => {
                         ))}
                       </div>
                       <div className="flex flex-row justify-start items-center mt-2">
-                        <a href={item.hostedLink} className="theme-btn capitalize !text-[aqua]">
+                        <a href={item.hostedLink} className="theme-btn capitalize !text-[aqua]" target="_blank">
                           Visit Site
                         </a>
-                        <a href={item.github} className="inline-flex ml-5 items-center !text-[aqua]">
+                        <a href={item.github} className="inline-flex ml-5 items-center !text-[aqua]" target="_blank">
                           <AiOutlineGithub className="gitIcon mr-1 text-[aqua]" />
                           Source Code
                         </a>
