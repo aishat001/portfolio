@@ -24,7 +24,7 @@ const Intro = () => {
           </h1>
           <p className="subtitle text-base sm:text-xl md:max-w-xl mb-7" data-aos="fade-up" data-aos-delay="2500">
             I am a Self-taught, creative frontend developer & Web designer. Glad
-            to have you here! you can call me aeesh
+            to have you here! you can call me aeesh.
           </p>
 
 
