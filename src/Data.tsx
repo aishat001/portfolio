@@ -27,7 +27,7 @@ export const AllPortfolio = [
     },
     {
         id: 3,
-        title: "Redrick Shopping Sit Clone",
+        title: "Redrick Shopping Site Clone",
         library: ["React", "Saas", "Aos"],
         hostedLink: "https://e-commerce-shopping-sitee.netlify.app/",
         github: "https://github.com/aishat001",
