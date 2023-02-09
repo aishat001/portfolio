@@ -1,17 +1,14 @@
 import React from 'react'
 import { AiFillMail, AiFillPhone } from 'react-icons/ai';
 import {BsWhatsapp} from 'react-icons/bs'
-import Header from '../../component/PageHeader/Header';
-import Socials from '../../component/Socials/Socials';
-import VerticalNav from '../../component/VerticalNav/VerticalNav';
 import "./contact.scss";
 
 const Contact = () => {
   return (
-    <div>
-<Header/>
+    <div className='w-[100vw]' id='contact'>
+
 {/* Contact */}
-    <div className='contact-wrapper' id="contact">
+    <div className='contact-wrapper px-5 sm:px-24 lg:px-48 pb-20 lg:py-32' id="contact">
       <div className="contact">
         <div className="title-wrapper">
         
@@ -39,7 +36,6 @@ const Contact = () => {
 
     {/* <VerticalNav /> */}
 
-<Socials/>
     </div>
   )
 }

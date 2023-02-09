@@ -2,7 +2,6 @@
     // top: 70%;
     left: 20px;
     bottom: 4%;
-    position: fixed;
     z-index: 4;
   
     &::before {
@@ -18,17 +17,16 @@
     ul {
         margin-bottom: 0px;
     }
-    //   &::after {
-    //     font-family: "Oswald", sans-serif;
-    //     color: #888;
-    //     content: "SOCIAL";
-    //     position: absolute;
-    //     left: -28px;
-    //     top: -135px;
-    //     letter-spacing: 5px;
-    //     transform: rotate(-90deg);
-    //   }
-    // }
+   @media (max-width: 640px) {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: auto;
+    margin-top: -40px;
+padding-top: 20px;
+padding-bottom: 70px;
+background: #212121;
+   }
   }
   
 

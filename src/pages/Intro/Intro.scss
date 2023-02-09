@@ -1,36 +1,10 @@
 .section1 {
-  height: calc(100vh - 44px);
   background-color: #212121;
   color: #f4f4f4;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  // position: relative;
-  padding-top: 60px;
-  
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   width: 1px;
-  //   height: 100%;
-  //   background: hsla(0, 0%, 40%, 0.3);
-  //   left: 18%;
-  //   z-index: 99;
-  // }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   width: 1px;
-  //   height: 100%;
-  //   background: hsla(0, 0%, 40%, 0.3);
-  //   z-index: 99;
-  //   right: 18% !important;
-  // }
 
   .hero {
     width: 70%;
@@ -38,7 +12,7 @@
     width: max-content;
     
     .title {
-      font-size: 5.9vw;
+      // font-size: 5.9vw;
       line-height: calc(1.1em + 0.5vw);
     // font-size: calc(50px + 1vw);
       font-family: "Almarena almarena display";

@@ -7,11 +7,11 @@ const Socials = () => {
   return (
     <>
       <div
-        className="social-medials twisterInDown"
-        data-aos="fade-right"
-        data-aos-delay="3000"
+        className="social-medials twisterInDown  bg-transparent sm:block sm:fixed"
+        // data-aos="fade-right"
+        // data-aos-delay="3000"
       >
-        <ul className="flex flex-col gap-4">
+        <ul className="flex flex-row sm:flex-col gap-4">
           <li>
             <a href={"https://github.com/aishat001"} target="_blank">
               <svg

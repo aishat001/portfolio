@@ -1,11 +1,9 @@
 .portfolio-wrapper {
   background: #212121;
   color: white;
-  padding: 80px 20px;
   min-height: calc(100vh - 44px);
+
   .portfolio {
-    width: 60vw;
-    margin: auto;
     .port-title {
       color: rgba(252, 246, 244, 0.1);
       font-size: 48px;
@@ -34,22 +32,12 @@
     }
 
     .projects {
-      // display: grid;
-      // grid-template-columns: repeat(2, 1fr);
-      // row-gap: 50px;
-      // column-gap: 50px;
-      display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3rem;
 
-      @media (max-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 3rem 1rem;
 
-      @media (max-width: 500px) {
-        grid-template-columns: 1fr;
-      }
+  
       .project {
         max-width: 25rem;
         height: 100%;

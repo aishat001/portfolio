@@ -1,22 +1,15 @@
 .contact-wrapper {
-    height: 100vh;
-    // background-image: url(/src/images/circle.svg);
+    height: 100%;
     background-color: #212121;
     display: flex;
     color:white;
-    // justify-content: center;
-    // align-items: center;
+padding-bottom: 10px;
     .contact {
-        width: 60vw;
         margin: 0 auto;
         padding: 100px 0 0 0;
         gap: 20px;
         display: flex;
         flex-direction: column;
-
-        @media (max-width: 375px) {
-            width: 55vw;
-        }
     }
 
     .title-wrapper {

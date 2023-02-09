@@ -1,9 +1,5 @@
 import { useState, useEffect } from "react";
 import TypewriterComponent from "typewriter-effect";
-import Header from "../../component/PageHeader/Header";
-import Socials from "../../component/Socials/Socials";
-import VerticalNav from "../../component/VerticalNav/VerticalNav";
-import { Progress } from "rsuite";
 
 import "./About.scss";
 import Footer from "../../component/Footer/Footer";
@@ -24,31 +20,37 @@ const About = () => {
   };
 
   return (
-    <>
-      {effect && <div className="about-overlay"></div>}
+    <div id="about">
+      {/* {effect && <div className="about-overlay"></div>} */}
 
-      <Header />
+      
 
-      <div className="about-wrapper">
+      <div  className="about-wrapper  px-5 sm:px-24 lg:px-48 pb-20 lg:py-32 flex flex-col md:flex-row justify-between ">
         {/*ABout page  */}
 
-        <section className="about-C puffIn" id="about">
-          <div className="about-me">
+<div className="about-img max-w-[20rem] max-h-[30rem] md:max-w-[15rem] md:max-h-[15rem] mt-20">
+<img src="images/woman-coding.jpg" alt="About me"  className=""/>
+</div>
+
+
+        <section className="about-C puffIn " id="about">
+          <div className="about-me pt-20 md:pt-0 flex flex-col w-[100vw] md:w-[100%]">
             <div className="title-wrapper">
               <h2
                 data-aos="fade-left"
-                data-aos-delay="2000"
-                data-aos-easing="ease-in-sine"
+                // data-aos-delay="500"
+                data-aos-easing="ease-in"
+                className="w-[max-content]"
               >
                 About Me
               </h2>
             </div>
 
-            <div className="content-wrapper">
+            <div className="content-wrapper max-w-[100vw] md:w-[40vw] lg:w-[35vw] xl:w-[40vw]">
               <span
                 className="title inline-flex gap-2"
                 data-aos="fade-right"
-                data-aos-delay="2500"
+                // data-aos-delay="1000"
                 data-aos-easing="ease-in-sine"
               >
                 Web{" "}
@@ -61,11 +63,14 @@ const About = () => {
                 />
               </span>
 
-              <h5 data-aos="fade-right" data-aos-delay="3000">
+              <h5 data-aos="fade-right"
+              //  data-aos-delay="1000"
+               >
                 HELPING BRANDS AND BUSINESSES COMMUNICATE WITH THEIR AUDIENCE IN
                 A MEANINGFUL WAY
               </h5>
-              <p data-aos="fade-left" data-aos-delay="3000">
+              <p data-aos="fade-left"
+               >
                 I love creating digital solutions to simplify people's everyday
                 lives, make them more exciting and help them achieve their
                 goals.
@@ -77,7 +82,6 @@ const About = () => {
               <div
                 className="download-R py-5 ml-3"
                 data-aos="zoom-in"
-                data-aos-delay="3000"
               >
                 <div className="click_and_hold flex items-center">
                   <div className="circlehold">
@@ -122,58 +126,11 @@ const About = () => {
           </div>
         </section>
 
-        {/* progress */}
-        {/* <div className="skills">
-        <div className="title-wrapper">
-          <h2
-            data-aos="fade-left"
-            //   data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            SkillSet
-          </h2>
-        </div>
-        <div className="progress-C">
-          <div className="progress">
-            <span>REACT</span>
-            <div style={style}>
-              <Progress.Circle percent={80} className="p-circle" />
-            </div>
-          </div>
-
-          <div className="progress">
-            <span>GATSBY</span>
-            <div style={style}>
-              <Progress.Circle percent={70} className="p-circle" />
-            </div>
-          </div>
-
-            <div className="progress">
-            <span>JAVASCRIPT</span>
-            <div style={style}>
-              <Progress.Circle percent={80} className="p-circle" />
-            </div>
-          </div>
-
-           <div className="progress">
-            <span>HTML</span>
-            <div style={style}>
-              <Progress.Circle percent={90} className="p-circle" />
-            </div>
-          </div>
-
-         <div className="progress">
-            <span>CSS</span>
-            <div style={style}>
-              <Progress.Circle percent={90} className="p-circle" />
-            </div>
-          </div>
-        </div>
-      </div> */}
+   
       </div>
-      <Socials />
-      <Footer />
-    </>
+      
+      
+    </div>
   );
 };
 

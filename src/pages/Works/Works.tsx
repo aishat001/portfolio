@@ -2,9 +2,7 @@
 import { useEffect, useState } from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import Header from "../../component/PageHeader/Header";
-import Socials from "../../component/Socials/Socials";
-import VerticalNav from "../../component/VerticalNav/VerticalNav";
+
 import {
   AllPortfolio,
   DashboardPorfolio,
@@ -13,94 +11,36 @@ import {
 } from "../../Data";
 import PortfolioList from "../PortfolioList/PortfolioList";
 import projectImg from "../../images/work02.png";
-import "./Portfolio.scss";
+import "./Works.scss";
 import Footer from "../../component/Footer/Footer";
 
-const Portfolio = () => {
+const Works = () => {
   const [selected, setselected] = useState("all");
   const [data, setData] = useState(AllPortfolio);
   const [effect, setEffect] = useState(true);
 
-  const lists = [
-    {
-      id: "all",
-      title: "All",
-    },
-    {
-      id: "dashboards",
-      title: "Dashboards",
-    },
-    {
-      id: "landingPage",
-      title: "Landing-Page",
-    },
-    {
-      id: "forms",
-      title: "Forms",
-    },
-  ];
-
-  useEffect(() => {
-    setTimeout(() => {
-      setEffect(false);
-    }, 2000);
-  }, []);
-
-  useEffect(() => {
-    switch (selected) {
-      case "all":
-        setData(AllPortfolio);
-        break;
-      case "dashboards":
-        setData(DashboardPorfolio);
-        break;
-      case "landingPage":
-        setData(LandingPagePOrtfolio);
-        break;
-      case "forms":
-        setData(FormPortfolio);
-        break;
-      default:
-        break;
-    }
-  }, [selected]);
 
 
   return (
-    <div>
-      {effect && <div className="about-overlay"></div>}
+    <div id="works" className="">
+      {/* {effect && <div className="about-overlay"></div>} */}
 
-      <Header />
+      
 
       {/* Worrks ****************** */}
-      <div className="portfolio-wrapper" id="portfolio">
-        <div className="portfolio">
+      <div className="portfolio-wrapper w-[100vw] px-5 sm:px-24 lg:px-48 pb-20 lg:py-32" id="portfolio">
+        <div className="portfolio pt-20">
           <h2 className="port-title"    data-aos="fade-right"
-                data-aos-delay="2500"
                 data-aos-easing="ease-in-sine">Portfolio</h2>
 
-          {/* titles */}
-          <ul className="flex flex-wrap gap-10 my-10 work-header items-center"    data-aos="fade-right"
-                data-aos-delay="2500"
-                data-aos-easing="ease-in-sine">
-            {lists.map((item, id) => (
-              <PortfolioList
-                title={item.title}
-                active={selected === item.id}
-                setSelected={setselected}
-                id={item.id}
-              />
-            ))}
-          </ul>
 
           {/* projects */}
-          <div className="projects">
+          <div className="projects pt-20">
             {data.map((item) => {
                 return (
                   <div className="project flex flex-col" 
                   data-aos-duration={item.duration}
                      data-aos={item.aos}
-                  data-aos-delay={item.delay}
                   data-aos-easing={item.easing}>
                     <div className="img">
                       <Link to="#" target="_blank">
@@ -134,10 +74,10 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <Socials />
-      <Footer/>
+      
+      
     </div>
   );
 };
 
-export default Portfolio;
+export default Works;
