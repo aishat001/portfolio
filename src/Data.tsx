@@ -5,7 +5,7 @@ export const AllPortfolio = [
         id: 1,
         title: "My Porfolio Site",
         library: ["React", "Saas", "Aos"],
-        hostedLink: "https://aeesh.netlify.app/",
+        hostedLink: "https://aishat.netlify.app/",
         github: "https://github.com/aishat001/portfolio",
         img: projectImg,
         aos :"fade-down",
