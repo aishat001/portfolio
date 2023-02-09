@@ -9,7 +9,7 @@ type Props = {
 
 const Cursor = ({cursorRef} : any) => {
   return (
-    <div className="cursor" ref={cursorRef}>
+    <div className="cursor hidden sm:flex" ref={cursorRef}>
       
     </div>
   )
