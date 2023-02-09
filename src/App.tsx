@@ -30,7 +30,7 @@ function App() {
   onmousedown = (e) => {
     const cursor = document.querySelector(".cursor");
     cursor.style.border = "2px solid green"
-    cursor.style.background = "red"
+    cursor.style.background = "aqua"
 
   }
   onmouseup = (e) => {
@@ -46,14 +46,9 @@ function App() {
     onMouseMove={ () => onmousemove}
     >
       <span ref={cursorRef}></span>
-    {/* <Cursor cursorRef={cursorRef}/> */}
+    <Cursor cursorRef={cursorRef}/>
       <Routes>
         <Route path="/"  element={loading ? <Loader/> : <Homepage/>}/>
-        {/* <Route path='/' element={<Homepage/>}/> */}
-        {/* <Route path='/#about' element={<About/>}/>
-        <Route path='/#works' element={<Portfolio/>}/>
-        <Route path='/#contact' element={<Contact/>}/> */}
-
 
       </Routes>
     </div>

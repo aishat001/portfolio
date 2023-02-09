@@ -28,7 +28,7 @@ const About = () => {
       <div  className="about-wrapper  px-5 sm:px-24 lg:px-48 pb-20 lg:py-32 flex flex-col md:flex-row justify-between ">
         {/*ABout page  */}
 
-<div className="about-img max-w-[20rem] max-h-[30rem] md:max-w-[15rem] md:max-h-[15rem] mt-20">
+<div className="about-img max-w-[20rem] max-h-[30rem] md:max-w-[15rem] md:max-h-[15rem] mt-20 sm:mt-0">
 <img src="images/woman-coding.jpg" alt="About me"  className=""/>
 </div>
 
@@ -67,15 +67,19 @@ const About = () => {
               //  data-aos-delay="1000"
                >
                 HELPING BRANDS AND BUSINESSES COMMUNICATE WITH THEIR AUDIENCE IN
-                A MEANINGFUL WAY
+                A MEANINGFUL WAY.
               </h5>
               <p data-aos="fade-left"
                >
-                I love creating digital solutions to simplify people's everyday
+                I am a Front end developer from Nigeria. I love creating digital solutions to simplify people's everyday
                 lives, make them more exciting and help them achieve their
                 goals.
-                <br />
-                <br />
+                </p>
+                <p>
+                My approach to Front End Development is centered around creating intuitive and engaging user experiences. I take the time to understand the unique needs and goals of each project,
+                 and work closely with clients and stakeholders to ensure that the final product meets their expectations.
+                </p>
+                <p>
                 My skillset are React, Gatsby, JavaScript, Html, Css, Scss,
                 Tailwind, Typescript, Api integration, version control, Trello,
               </p>

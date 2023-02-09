@@ -9,7 +9,7 @@
       font-size: 48px;
       z-index: 0;
       width: fit-content;
-      border-bottom: 1px solid #e4aa4899;
+      border-bottom: 1px solid aqua;
     }
 
     .work-header {
@@ -42,7 +42,7 @@
         max-width: 25rem;
         height: 100%;
         padding: .5rem;
-        background-color:#8d8d8d;
+        background-color:black;
         .img {
           width: 100%;
           height: 100%;
@@ -81,10 +81,9 @@
           // }
         }
         .content {
-          background-color: #9d9d9d;
           color: white;
           padding: 10px;
-          background-color: #9d9d9d;
+          background-color: black;
           color: white;
           filter: drop-shadow(2px 4px 6px black);
           padding: 10px;

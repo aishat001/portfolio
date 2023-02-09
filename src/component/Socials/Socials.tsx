@@ -7,7 +7,7 @@ const Socials = () => {
   return (
     <>
       <div
-        className="social-medials twisterInDown  bg-transparent sm:block sm:fixed"
+        className="social-medials twisterInDown  sm:block sm:fixed"
         // data-aos="fade-right"
         // data-aos-delay="3000"
       >

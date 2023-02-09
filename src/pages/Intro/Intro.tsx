@@ -18,12 +18,12 @@ const Intro = () => {
 
       <div className="section1 w-[100vw]" id="home">
         <div className="w-[100%] px-5 sm:px-24 lg:px-44 pt-32 pb-20 lg:py-32 ">
-          <p className="font-bold text-base lg:text-xl">Hi, I'm</p>
+          <p className="font-bold text-base lg:text-xl text-[aqua]">Hi, I'm</p>
           <h1 className=" mt-2 text-5xl lg:text-7xl mb-5 " data-aos="fade-down" data-aos-delay="2000">
            Aishat Waheed
           </h1>
           <p className="subtitle text-base sm:text-xl md:max-w-xl mb-7" data-aos="fade-up" data-aos-delay="2500">
-            I am a creative frontend developer & Web designer. Glad
+            I am a Self-taught, creative frontend developer & Web designer. Glad
             to have you here! you can call me aeesh
           </p>
 
@@ -38,8 +38,9 @@ const Intro = () => {
                         </div>
                         <i></i>
                         <div className="hold_span border-b-2">
-                        <a href="https://www.canva.com/design/DAEur8jptC0/c8ptjPm_f9mfRl409vdy0w/view?utm_content=DAEur8jptC0&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">
-                            View my work</a>
+                          <a href="#works" >View my Works</a>
+                        {/* <a href="https://www.canva.com/design/DAEur8jptC0/c8ptjPm_f9mfRl409vdy0w/view?utm_content=DAEur8jptC0&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">
+                            View my work</a> */}
                         </div>
                     </div></div>
      

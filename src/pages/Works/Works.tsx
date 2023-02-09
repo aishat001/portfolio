@@ -48,20 +48,20 @@ const Works = () => {
                         <img src={item.img} alt="" width="720px" />{" "}
                       </Link>
                     </div>
-                    <div className="content flex flex-col gap-4">
+                    <div className="content flex flex-col gap-3">
                       <h5 className="title">{item.title}</h5>
-                      <p className="subtitle">{item.subtitle}</p>
-                      <div className="tag flex gap-4">
+                      {/* <p className="subtitle">{item.subtitle}</p> */}
+                      <div className="tag flex gap-3">
                         {item.library.map((lib) => (
                           <span>{lib}</span>
                         ))}
                       </div>
-                      <div className="flex flex-row justify-start items-center mt-3">
-                        <Link to="" className="theme-btn capitalize">
+                      <div className="flex flex-row justify-start items-center mt-2">
+                        <Link to="" className="theme-btn capitalize !text-[aqua]">
                           Visit Site
                         </Link>
-                        <Link to="" className="inline-flex ml-5 items-center">
-                          <AiOutlineGithub className="gitIcon mr-1" />
+                        <Link to="" className="inline-flex ml-5 items-center !text-[aqua]">
+                          <AiOutlineGithub className="gitIcon mr-1 text-[aqua]" />
                           Source Code
                         </Link>
                       </div>

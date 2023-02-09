@@ -22,10 +22,9 @@ const Header = () => {
         <header className='bg-dark header flex justify-between' id='header-menu'>
           <div className='logo-c' >
           <Link to="/">
-            <img src={logo} alt="" />
+            <img src="images/aishatLogo1.png" alt="" />
             </Link>
           </div>
-      {/* <h1 className='mt-0' >aeesh</h1> */}
 
       <div className='freelance'>
         <div className="circle"></div>
