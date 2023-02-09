@@ -16,14 +16,14 @@ const Contact = () => {
             data-aos="fade-left"
             //   data-aos-offset="300"
               data-aos-easing="ease-in-sine" 
-            className='contactbg'>Contact Us </h1>
+            className='contactbg'>Contact Me </h1>
 
 
             <h4 className='mt-7'>Have a project  in mind?</h4>
 
         </div>
    
-          <h5>Reach out to us, <br/>we can make something awesome together</h5> 
+          <h5>Reach out to me, <br/>we can make something awesome together</h5> 
 
           <div className="flex flex-col gap-5 mt-10">
           <a href='mailto:waheedaishat@gmail.com' target="blank"><button><span className='flex flex-row items-center gap-2'> <AiFillMail/>Send a mail</span></button></a>
