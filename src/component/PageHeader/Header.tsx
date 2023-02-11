@@ -70,7 +70,7 @@ const Header = () => {
         <>
         <nav className='md:hidden nav'>
         <ul className='flex flex-col items-center justify-center gap-5'>
-        <li><Link to="/">Home</Link></li>
+        {/* <li><Link to="/">Home</Link></li> */}
         <li><a href="#about">About</a></li>
           <li><a href="#works">Works</a></li>
           <li><a href="#contact">Contact</a></li>
