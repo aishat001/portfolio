@@ -54,7 +54,7 @@ const Header = () => {
       <div className='hidden md:block '>
       <ul className='flex flex-row items-center justify-center gap-5'>
           {/* <li className='home'><a href="#home">Home</a></li> */}
-          <li><a href="#about">About</a></li>
+          <li><a href="#about" >About</a></li>
           <li><a href="#works">Works</a></li>
           <li><a href="#contact">Contact</a></li>
 
@@ -70,10 +70,10 @@ const Header = () => {
         <>
         <nav className='md:hidden nav'>
         <ul className='flex flex-col items-center justify-center gap-5'>
-        {/* <li><Link to="/">Home</Link></li> */}
-        <li><a href="#about">About</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#contact">Contact</a></li>
+        {/* <li onClick={() => setopenNav(false)}><a href="/">Home</a></li> */}
+        <li onClick={() => setopenNav(false)}><a href="#about">About</a></li>
+          <li onClick={() => setopenNav(false)}><a href="#works">Works</a></li>
+          <li onClick={() => setopenNav(false)}><a href="#contact">Contact</a></li>
 
         </ul>
 
