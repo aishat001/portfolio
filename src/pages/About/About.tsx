@@ -112,7 +112,7 @@ const About = () => {
                   <i></i>
                   <div className="hold_span border-b-2">
                     <a
-                      href="https://www.canva.com/design/DAEur8jptC0/c8ptjPm_f9mfRl409vdy0w/view?utm_content=DAEur8jptC0&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu"
+                      href="https://docs.google.com/document/d/1nlwlPk71_nrTT5kUa3CHNCtW4t3-qZzVJUs3A7lp0Bg/edit?usp=sharing"
                       target="_blank"
                     >
                       Check Resume
