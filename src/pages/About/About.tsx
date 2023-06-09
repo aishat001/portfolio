@@ -80,7 +80,7 @@ const About = () => {
                  and work closely with clients and stakeholders to ensure that the final product meets their expectations.
                 </p>
                 <p>
-                My skillset are React, Gatsby, JavaScript, Html, Css, Scss,
+                My skillset are React, Vue Gatsby, JavaScript, Html, Css, Scss,
                 Tailwind, Typescript, Api integration, version control, Trello.
               </p>
               <div
@@ -112,7 +112,7 @@ const About = () => {
                   <i></i>
                   <div className="hold_span border-b-2">
                     <a
-                      href="https://www.canva.com/design/DAEur8jptC0/c8ptjPm_f9mfRl409vdy0w/view?utm_content=DAEur8jptC0&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu"
+                      href="https://drive.google.com/file/d/1VYNC7yF5q0xqWWEE3QtM7XVfkI6aJP9p/view?usp=drive_link"
                       target="_blank"
                     >
                       Check Resume

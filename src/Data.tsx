@@ -3,11 +3,23 @@ import projectImg from "../src/images/work02.png";
 export const AllPortfolio = [
     {
         id: 1,
+        title: "E-commerce website",
+        library: ["React", "Nodejs", "MongoDB", "Tailwind" ],
+        hostedLink: "https://mjcollections.onrender.com/",
+        github: "https://github.com/aishat001/mjcollections",
+        img: "/images/ecommerce.png",
+        aos :"fade-down",
+     easing:"linear",
+    duration:"1000",
+        delay: "2000"
+    },
+    {
+        id: 1,
         title: "My Porfolio Site",
-        library: ["React", "Saas", "Aos"],
+        library: ["React", "Sass", "Aos"],
         hostedLink: "https://aishat.netlify.app/",
         github: "https://github.com/aishat001/portfolio",
-        img: projectImg,
+        img: "/images/portfolio.png",
         aos :"fade-down",
      easing:"linear",
     duration:"1000",
@@ -49,18 +61,18 @@ export const AllPortfolio = [
        duration:"1000",
            delay: "1000"
     },
-    {
-        id: 1,
-        title: "Porfolio Landing Page",
-        library: ["React", "TailwindCss", "HTML"],
-        hostedLink: "https://portfolio-tempp.netlify.app/",
-        github: "https://github.com/aishat001",
-        img: "images/portfolio-kemi.png",
-        aos :"fade-down",
-     easing:"linear",
-    duration:"1000",
-        delay: "1000"  
-      },
+    // {
+    //     id: 1,
+    //     title: "Porfolio Landing Page",
+    //     library: ["React", "TailwindCss", "HTML"],
+    //     hostedLink: "https://portfolio-tempp.netlify.app/",
+    //     github: "https://github.com/aishat001",
+    //     img: "images/portfolio-kemi.png",
+    //     aos :"fade-down",
+    //  easing:"linear",
+    // duration:"1000",
+    //     delay: "1000"  
+    //   },
     {
         id: 2,
         title: "Search Country App",
